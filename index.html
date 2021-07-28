@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타오콕:회원가입</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div class="cont_box">
+            <h1 class="Noto_Sans">타오콕 회원가입</h1>
+            <div class="txt_part">
+                <div class="top">
+                    <p>이미 가입하셨다면?</p>
+                    <a href="#">로그인 바로가기</a>
+                </div>
+
+                <div class="bottom">
+                    <div class="flex_box">
+                        <div class="logo_flex">
+                            <a class="Noto_Sans" href="#">페이코</a>
+                        </div>
+                        <div class="logo_flex">
+                            <a class="Noto_Sans" href="#">네이버</a>
+                        </div>
+                        <div class="logo_flex">
+                            <a class="Noto_Sans" href="#">페이스북</a>
+                        </div>
+                    </div>
+                    <p>SNS로 가입하고 간편하게 로그인하세요.</p>
+                </div>
+            </div>
+            <form name="" action="" method="get">
+                <fieldset>
+                    <!-- 아이디 -->
+                    <div class="form_group">
+                        <div class="input_part">
+                            <input id="id" type="text" autocomplete="off" value maxlength="12" >
+                            <label for="id">아이디</label>
+                        </div>
+                        <div class="guide">아이디는 6~12자 영소문자,숫자로 입력해주세요.(가입 후 수정불가)</div>
+                        <div class="available">사용 가능한 아이디입니다.</div>
+                    </div>
+                    <!-- 비밀번호 -->
+                    <div class="form_group">
+                        <div class="input_part">
+                            <input id="password" type="password" autocomplete="off" value maxlength="16" >
+                            <label for="password">비밀번호</label>
+                            <div class="icon_pwoff"></div>
+                            <div class="icon_pwon"></div>
+                        </div>
+                        <div class="guide">비밀번호는 10~16자 영대소문자,숫자를 조합하여 입력해주세요.</div>
+                        <div class="available">사용 가능한 비밀번호입니다. (보안등급:보통)</div>
+                    </div>
+                    <!-- 이름 -->
+                    <div class="form_group">
+                        <div class="input_part">
+                            <input id="name" type="text" autocomplete="off" value maxlength="30" >
+                            <label for="name">이름</label>
+                        </div>
+                        <div class="guide">개인: 명의자 실명,사업자: 사업자등록증에 기재된 대표자명을 입력해주세요.(상호명×,오기재×, 가입 후 수정불가)</div>
+                        <div class="available">개인:명의자 실명,사업자: 사업자등록증에 기재된 대표자명을 입력해주세요.(상호명×,오기재×, 가입 후 수정불가)</div>
+                    </div>
+                    <!-- 이메일 -->
+                    <div class="form_group">
+                        <div class="input_part">
+                            <input id="email" type="text" autocomplete="off" value maxlength="100" >
+                            <label for="email">이메일</label>
+                        </div>
+                        <div class="guide">이메일주소가 올바르지 않습니다.</div>
+                        <div class="available">사용 가능한 이메일 주소 입니다.</div>
+                    </div>
+                    <!-- 휴대폰 번호 -->
+                    <div class="form_group">
+                        <div class="input_part">
+                            <input id="number" type="text" autocomplete="off" value maxlength="11" >
+                            <label for="number">휴대폰 번호</label>
+                        </div>
+                        <div class="guide">휴대폰 번호가 올바르지 않습니다.</div>
+                        <div class="available">사용 가능한 휴대폰 번호 입니다.</div>
+                    </div>
+                </fieldset>
+            </form>
+            <!-- 약관 -->
+            <div class="terms">
+                <div class="flex_box">
+                    <input id="personal" type="checkbox">
+                    <label for="personal" class="Noto_Sans">
+                        <span class="Noto_Sans">[필수]</span> 약관 및 개인정보 수집/이용 동의 
+                    </label>
+                    <span class="menu_btn"><a href="#">숨기기 ▲</a></span>
+                </div>
+                <div class="flex_box">
+                    <input id="sign_up" type="checkbox">
+                    <label for="sign_up" class="terms_popup">회원가입 이용약관</label>
+                    <span class="popup_01"><i class="fas fa-chevron-right"></i></span>
+                </div>
+                <div class="flex_box">
+                    <input id="personal_agree" type="checkbox">
+                    <label for="personal_agree" class="terms_popup">개인정보 수집 및 이용 동의</label>
+                    <span class="popup_02"><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="ad">
+                <div class="flex_box">
+                    <input id="ad_agree" type="checkbox">
+                    <label for="ad_agree" class="Noto_Sans">
+                        <span class="Noto_Sans">[선택]</span> 광고성 정보 수신 동의
+                    </label>          
+                    <span class="menu_btn"><a href="#">숨기기 ▲</a></span>         
+                </div>
+                <div class="flex_box">
+                    <input id="ad_email" type="checkbox">
+                    <label for="ad_email">이메일</label>
+                </div>
+                <div class="flex_box">
+                    <input id="ad_sms" type="checkbox">
+                    <label for="ad_sms">SMS</label>
+                </div>
+            </div>
+            <div class="footer_part">
+                <p>* 만 14세 이상 고객만 가입 가능합니다.</p>
+                <p>* 가입정보 오입력, 허위 작성으로 인한 피해 예방을 위해 올바른 정보를 입력해주세요.</p>
+            </div>
+            <div class="join_btn">
+                <a href="#" onclick="return false;">가입하기</a>
+            </div>
+
+            <div class="bg"></div>
+            
+        </div>
+    </main>
+
+    <!-- 회원가입 팝업창 -->
+    <div class="dark"></div>
+    <div class="popup_btn_01">
+        <div class="close_btn">×</div>
+        <h1>회원가입 이용약관</h1>
+        <div class="txt_part">
+            <pre class="Noto_Sans">
+                <!-- text_part(popup.js)  -->
+            </pre>
+        </div>
+    </div>
+    <!-- 개인정보 팝업창 -->
+    <div class="popup_btn_02">
+        <div class="close_btn">×</div>
+        <h1>개인정보 수집 및 이용</h1>
+        <div class="txt_part">
+            <pre class="Noto_Sans">
+                <!-- text_part(popup.js)  -->             
+            </pre>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/popup.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/9450577c55.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
