@@ -433,9 +433,29 @@ main .cont_box .join_btn a{
 /* 반응형 */
 @media (max-width:1000px){
     main .cont_box{overflow-x: hidden;}
-    .popup_btn_01, .popup_btn_02{width: 300px; height: 200px; min-height: 500px;}
-    .popup_btn_01 h1, .popup_btn_02 h1{width: 200px;}
+    .popup_btn_01, .popup_btn_02{width: 239px; height: 200px; min-height: 500px;}
+    .popup_btn_01 h1, .popup_btn_02 h1{width: 150px; font-size: 13px;}
+    .popup_btn_01 .txt_part, .popup_btn_02 .txt_part{height: 320px;}
     body{overflow-x: hidden;}
+    .popup_btn_01 .txt_part pre, .popup_btn_02 .txt_part pre{font-size: 10px;}
+    .table-agreement thead th, .table-agreement thead td {
+        background: #f9f9f9;
+        padding: 10px 0px !important;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #e1e1e1;
+    }
+    .table-agreement th, .table-agreement td {
+        padding: 5px 0px;
+        vertical-align: middle;
+        border: 1px solid #e1e1e1;
+        white-space: pre-wrap;
+        *: ;
+        white-space: normal;
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
 }
 @media (max-width:530px){
     main .cont_box{padding: 0 20px;}
